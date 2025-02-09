@@ -1,7 +1,6 @@
 # awsome-llm-papers
 A comprehensive repository for research papers, code snippets, and notes related to llms.
 
-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
 ## BERT
 BERT (Bidirectional Encoder Representations from Transformers) is a Transformer-based machine learning technique for natural language processing (NLP) pre-training. It was created and published in 2018 by Jacob Devlin and his colleagues from Google.
 
@@ -21,16 +20,3 @@ Paper: [Language Models are Unsupervised Multitask Learners](https://cdn.openai.
 GPT-3, the third iteration of the GPT models, is considered one of the most powerful and largest language models to date, with 175 billion machine learning parameters.
 
 Paper: [Language Models are Few-Shot Learners](https://arxiv.org/abs/2005.14165)
-
-## DeepSeek-V3
-
- DeepSeek-V3, a strong Mixture-of-Experts (MoE) language model with 671B total parameters with 37B activated for each token. To achieve efficient inference and cost-effective training, DeepSeek-V3 adopts Multi-head Latent Attention (MLA) and DeepSeekMoE architectures, which were thoroughly validated in DeepSeek-V2.
-
-Paper: [DeepSeek-V3](https://github.com/deepseek-ai/DeepSeek-V3/blob/main/DeepSeek_V3.pdf)
-
-
-
-## DeepSeek-R1
-
- DeepSeek-R1-Zero and DeepSeek-R1. DeepSeek-R1-Zero, a model trained via large-scale reinforcement learning (RL) without supervised fine-tuning (SFT) as a preliminary step, demonstrated remarkable performance on reasoning. 
-Paper: [DeepSeek-R1](https://github.com/deepseek-ai/DeepSeek-R1/blob/main/DeepSeek_R1.pdf)
