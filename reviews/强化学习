@@ -1,0 +1,15 @@
+- https://mp.weixin.qq.com/s/mGlObqTANspHGkujzCmY5A
+- 3.6日
+
+
+### GAE
+### On policy 和 off policy
+### Rule-Based 和 PRM
+### PPO
+### DPO
+### GRPO
+### 为什么把 KL 散度作为一个 hard constraint 而不是一个目标函数的惩罚项。
+- 这种形式的惩罚项会形成一个 lower bound 来限制策略的变化。认为如果使用惩罚项，𝛽 系数需要针对不同任务进行调整。在一个任务中，合适的 𝛽 值可能在学习的不同阶段有所不同。固定的 𝛽 值在某些情况下可能会导致策略更新过大或过小，从而影响训练效果。
+
+
+

@@ -1,0 +1,3 @@
+- xformers
+  - xformers能够有效加速attention计算并降低显存。
+  - https://zhuanlan.zhihu.com/p/688745007

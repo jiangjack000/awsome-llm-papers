@@ -1,0 +1,27 @@
+- 2012. 数组美丽值求和
+  - 左边选最大的，右边选最小的
+  - 相关题目：发放糖果，接雨水1
+
+``` python
+class Solution:
+    def sumOfBeauties(self, nums: List[int]) -> int:
+        # 右边是选小的，左边是选大的
+        n, ans, left = len(nums), 0, nums[0]
+        right = [0] * n
+        right[n - 1] = nums[n - 1]
+        for i in range(n - 2, 0, -1):
+            right[i] = min(right[i + 1], nums[i])
+        print(right)
+        for i in range(1, n - 1):
+            x = nums[i]
+            #print(f' {left} {x} {right[i + 1]} ')
+            if left < x  and x < right[i + 1]:
+                ans += 2
+                #print(f'{i} {x}')
+            elif nums[i - 1] < x < nums[i + 1]:
+                ans += 1
+            left = max(left, x)
+        return ans
+        
+        
+```

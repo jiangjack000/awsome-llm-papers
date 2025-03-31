@@ -1,0 +1,12 @@
+- [function calling](https://learn.deeplearning.ai/courses/function-calling-and-data-extraction-with-llms/lesson/hgqfh/introduction?utm_source=home&utm_medium=course-landing-page&utm_campaign=hero-cta-button&_gl=1*co0hc0*_ga*OTU5NzUxMzUxLjE3Mzk0NTAxODA.*_ga_PZF1GBS1R1*MTc0MDcxNzE5OS42LjEuMTc0MDcxNzIzNC4yNS4wLjA.)
+
+
+
+- NexusRan V2-13B
+- 使用NexusRavenV2-13B 大模型，一个针对函数调用（function-calling）和数据提取进行了微调的开源模型。该模型可在Hugging Face上使用，在一些函数调用任务中表现优于GPT-4，并且具有130亿个参数，因此可以在本地托管。
+- function call指的是用户使用prompt输入文字，并且输入所对应的function description，LLM输出对应的api名称。并不是真正的调用api并得到最后的结果。
+
+
+- singl call
+- parallel call
+- 
