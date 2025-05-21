@@ -1,15 +1,17 @@
 # awsome-llm-papers
 
-A comprehensive repository for research papers, code snippets, and notes related to llms.
+A comprehensive repository for research papers, code snippets, and notes related to LLMs.
 
 
 ## OutStanding LLM Technical Report
 ### GPT-4
 GPT-4 is OpenAI's large multimodal language model, capable of processing text and visual inputs.
-Paper: [GPT-4](./papers/GPT-4 Technical Report.pdf)
+
+Paper: [GPT-4](./papers/GPT-4_Technical_Report.pdf)
 
 ### GPT-4.5
-GPT-4.5, codenamed Orion, is an advanced version of GPT-4 with enhanced pattern recognition and creativity. It supports 15 languages and offers improved conversational abilities.
+GPT-4.5, is an advanced version of GPT-4 with enhanced pattern recognition and creativity. It supports 15 languages and offers improved conversational abilities.
+
 Paper: [GPT-4.5](./papers/gpt-4-5-system-card-2272025.pdf)
 
 
@@ -104,6 +106,14 @@ Paper: [Learning Transferable Visual Models From Natural Language Supervision](.
 
 ## PreTraining
 
+
+###
+
+The paper introduces the Pre-trained Model Average (PMA) strategy for merging model weights during the pre-training phase of large language models (LLMs). PMA combines checkpoints from the stable training phase using methods like Simple Moving Average (SMA), Weighted Moving Average (WMA), and Exponential Moving Average (EMA). The study shows that PMA not only enhances model performance but also enables accurate prediction of annealing behavior, leading to more efficient development and lower training costs. The optimal merging interval scales with model size, and incorporating more checkpoints improves performance.
+
+Paper: [Model Merging
+in Pre-training of Large Language Models](./papers/Model Merging
+in Pre-training of Large Language Models.pdf)
 
 
 ### Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer
