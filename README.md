@@ -111,8 +111,7 @@ Paper: [Learning Transferable Visual Models From Natural Language Supervision](.
 
 The paper introduces the Pre-trained Model Average (PMA) strategy for merging model weights during the pre-training phase of large language models (LLMs). PMA combines checkpoints from the stable training phase using methods like Simple Moving Average (SMA), Weighted Moving Average (WMA), and Exponential Moving Average (EMA). The study shows that PMA not only enhances model performance but also enables accurate prediction of annealing behavior, leading to more efficient development and lower training costs. The optimal merging interval scales with model size, and incorporating more checkpoints improves performance.
 
-Paper: [Model Merging
-in Pre-training of Large Language Models](./papers/Model Merging
+Paper: [Model Merging in Pre-training of Large Language Models](./papers/Model Merging
 in Pre-training of Large Language Models.pdf)
 
 
