@@ -1,6 +1,42 @@
-# awsome-llm-papers
+# awesome-llm-papers
 
 A comprehensive repository for research papers, code snippets, and notes related to LLMs.
+
+## Summary
+- [awesome-llm-papers](#awesome-llm-papers)
+  - [Summary](#summary)
+  - [OutStanding LLM Technical Report](#outstanding-llm-technical-report)
+    - [GPT-4](#gpt-4)
+    - [GPT-4.5](#gpt-45)
+    - [Qwen2\_5\_1M\_Technical\_Report](#qwen2_5_1m_technical_report)
+    - [KIMI-1.5](#kimi-15)
+    - [DeepSeek\_R1](#deepseek_r1)
+    - [DeepSeek\_V3](#deepseek_v3)
+    - [LLama3.1](#llama31)
+  - [Architecture](#architecture)
+    - [Attention Is All You Need](#attention-is-all-you-need)
+    - [ERNIE - Enhanced Language Representation with Informative Entities](#ernie---enhanced-language-representation-with-informative-entities)
+    - [XLNet - Generalized Autoregressive Pretraining for Language Understanding](#xlnet---generalized-autoregressive-pretraining-for-language-understanding)
+    - [RoBERTa - A Robustly Optimized BERT Pretraining Approach](#roberta---a-robustly-optimized-bert-pretraining-approach)
+    - [Swin Transformer - Hierarchical Vision Transformer using Shifted Windows](#swin-transformer---hierarchical-vision-transformer-using-shifted-windows)
+    - [Learning Transferable Visual Models From Natural Language Supervision](#learning-transferable-visual-models-from-natural-language-supervision)
+  - [Parallel Training](#parallel-training)
+    - [Training\_Multi-Billion\_Parameter\_Language\_Models\_Usin\_Model\_Parallelism](#training_multi-billion_parameter_language_models_usin_model_parallelism)
+    - [GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism](#gpipe-efficient-training-of-giant-neural-networks-using-pipeline-parallelism)
+    - [ZeRO: Memory Optimizations Toward Training Trillion Parameter Models](#zero-memory-optimizations-toward-training-trillion-parameter-models)
+    - [DeepSpeed: System Optimizations Enable Training Deep Learning Models with Over 100 Billion Parameters](#deepspeed-system-optimizations-enable-training-deep-learning-models-with-over-100-billion-parameters)
+    - [Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](#switch-transformers-scaling-to-trillion-parameter-models-with-simple-and-efficient-sparsity)
+  - [PreTraining](#pretraining)
+    - [Model Merging in Pre-training of Large Language Models](#model-merging-in-pre-training-of-large-language-models)
+    - [Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer](#exploring-the-limits-of-transfer-learning-with-a-unified-text-to-text-transformer)
+    - [Improving Language Understanding by Generative Pre-Training](#improving-language-understanding-by-generative-pre-training)
+    - [BERT](#bert)
+    - [Language Models are Few-Shot Learners](#language-models-are-few-shot-learners)
+    - [OLMO2](#olmo2)
+  - [Post-Training](#post-training)
+    - [LEARNING DYNAMICS OF LLM FINETUNING  ICLR 2025 Oral, Outstanding Paper Award](#learning-dynamics-of-llm-finetuning--iclr-2025-oral-outstanding-paper-award)
+    - [DPO](#dpo)
+    - [NeurIPS-2022-training-language-models-to-follow-instructions-with-human-feedback-Paper-Conference](#neurips-2022-training-language-models-to-follow-instructions-with-human-feedback-paper-conference)
 
 
 ## OutStanding LLM Technical Report
@@ -101,18 +137,55 @@ Paper: [Learning Transferable Visual Models From Natural Language Supervision](.
 
 ## Parallel Training
 
+### Training_Multi-Billion_Parameter_Language_Models_Usin_Model_Parallelism
+
+This paper presents techniques for efficiently training language models with billions of parameters via model parallelism, enabling the scaling of model size beyond single GPU memory limitations.
+
+Paper: [Training Multi-Billion Parameter Language Models Using Model Parallelism](https://arxiv.org/pdf/1909.08053)
+
+
+
+### GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism
+
+GPipe proposes a pipeline parallelism approach that splits models into segments and processes micro-batches in a pipeline, significantly improving memory efficiency and scalability.
+
+Paper: [GPipe: Efficient Training of Giant Neural Networks using Pipeline Parallelism](https://arxiv.org/pdf/1811.06965)
+
+
+
+### ZeRO: Memory Optimizations Toward Training Trillion Parameter Models
+
+ZeRO (Zero Redundancy Optimizer) introduces a set of memory optimization techniques that enable the training of trillion-parameter models by partitioning optimizer states, gradients, and parameters across devices.
+
+Paper: [ZeRO: Memory Optimizations Toward Training Trillion Parameter Models](https://arxiv.org/pdf/1910.02054)
+
+
+
+### DeepSpeed: System Optimizations Enable Training Deep Learning Models with Over 100 Billion Parameters
+
+DeepSpeed presents a deep learning optimization library that combines ZeRO and other system techniques to enable efficient training of models with over 100 billion parameters.
+
+Paper: [DeepSpeed: System Optimizations Enable Training Deep Learning Models with Over 100 Billion Parameters](https://arxiv.org/pdf/2007.03029)
+
+
+
+### Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity
+
+Switch Transformers leverages sparse expert models and routing to enable the scaling of language models to over a trillion parameters while maintaining computational efficiency.
+
+Paper: [Switch Transformers: Scaling to Trillion Parameter Models with Simple and Efficient Sparsity](https://arxiv.org/pdf/2101.03961)
+
 
 ---
 
 ## PreTraining
 
 
-###
+### Model Merging in Pre-training of Large Language Models
 
-The paper introduces the Pre-trained Model Average (PMA) strategy for merging model weights during the pre-training phase of large language models (LLMs). PMA combines checkpoints from the stable training phase using methods like Simple Moving Average (SMA), Weighted Moving Average (WMA), and Exponential Moving Average (EMA). The study shows that PMA not only enhances model performance but also enables accurate prediction of annealing behavior, leading to more efficient development and lower training costs. The optimal merging interval scales with model size, and incorporating more checkpoints improves performance.
+The paper introduces the Pre-trained Model Average (PMA) strategy for merging model weights during the pre-training phase of large language models (LLMs). 
 
-Paper: [Model Merging in Pre-training of Large Language Models](./papers/Model Merging
-in Pre-training of Large Language Models.pdf)
+Paper: [Model Merging in Pre-training of Large Language Models](./papers/Model_Merging_in_Pre-training_of_Large_Language_Models.pdf)
 
 
 ### Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer
@@ -155,6 +228,12 @@ Paper: [pre_train_2_OLMO2](./papers/pre_train_2_OLMO2.pdf)
 
 ## Post-Training
 
+### LEARNING DYNAMICS OF LLM FINETUNING  ICLR 2025 Oral, Outstanding Paper Award
+
+
+It provides a framework to analyze how the learning of specific training examples influences the model's predictions on other examples, offering insights into the behavior of deep learning systems.
+
+Paper: [DPO](./papers/LEARNING_DYNAMICS_OF_LLM_FINETUNING.pdf)
 
 ### DPO
 
